@@ -1,7 +1,7 @@
 const ganador = Math.floor(Math.random() * 100) + 1;
 let chances = 5;
 const refresca = "Si querés volver a jugar, refrescá la página.";
-console.log(ganador)
+
 
 function ingresarNumero() {
     let numero = Number(document.querySelector("#numero").value)
