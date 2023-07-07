@@ -6,9 +6,9 @@ const refresca = "Si querés volver a jugar, refrescá la página.";
 function ingresarNumero() {
     let numero = Number(document.querySelector("#numero").value)
     
-    while (numero > 100 || numero < 1) {
+    if(numero > 100 || numero < 1) 
         alert("El número debe estar entre 1 y 100.")
-    }
+    else        
     while (chances > 0) {
         if (!consultarNumero(numero)) {
             chances--;
