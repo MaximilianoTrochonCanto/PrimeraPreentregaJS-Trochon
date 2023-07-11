@@ -20,7 +20,9 @@ function ingresarNumero() {
     if (numero > 100 || numero < 1)
         alert("El número debe estar entre 1 y 100.")
     else
-        while (chances > 0) {
+        
+        //while (chances > 0) {
+            for(let i = chances; i > 0;i--){
             if (!consultarNumero(numero)) {
                 chances--;
                 if (chances > 0) numeroIncorrecto(numero);
